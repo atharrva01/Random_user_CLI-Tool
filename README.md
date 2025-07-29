@@ -1,7 +1,3 @@
-This looks like a fun little script\! Here's a `README.md` file for it:
-
------
-
 # Random User Info Generator
 
 This Python script allows you to fetch and display information about a random person based on a specified gender. It utilizes the [Random User API](https://randomuser.me/) to retrieve data such as name, location, email, and phone number.
@@ -66,4 +62,3 @@ If you enter an invalid gender (anything other than "male" or "female"), the scr
 python random_user.py --gender other
 ```
 
------
