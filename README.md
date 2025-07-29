@@ -1,80 +1,69 @@
-# 🧑‍💻 Random User CLI Tool
+This looks like a fun little script\! Here's a `README.md` file for it:
 
-A simple Python command-line interface (CLI) tool that fetches and displays random user information based on gender using the [randomuser.me](https://randomuser.me) API.
+-----
 
----
+# Random User Info Generator
 
-## 🚀 Features
+This Python script allows you to fetch and display information about a random person based on a specified gender. It utilizes the [Random User API](https://randomuser.me/) to retrieve data such as name, location, email, and phone number.
 
-- Get a random user profile based on gender
-- Outputs:
-  - Full Name
-  - Location (City, State, Country)
-  - Email Address
-  - Phone Number
-- Fast and lightweight CLI experience
+## Features
 
----
+  * Get random user details for "male" or "female" genders.
+  * Displays name (title, first, last), city, state, country, email, and phone number.
 
-## 📦 Requirements
+## Requirements
 
-- Python 3.x
-- `requests` module
+  * Python 3.x
+  * `requests` library
 
-Install dependencies:
+## Installation
+
+1.  **Clone the repository (or save the script):**
+    If you have this script in a Git repository, you can clone it:
+
+    ```bash
+    git clone <your-repository-url>
+    cd <your-repository-directory>
+    ```
+
+    Otherwise, simply save the provided code as a Python file (e.g., `random_user.py`).
+
+2.  **Install the required library:**
+
+    ```bash
+    pip install requests
+    ```
+
+## Usage
+
+Run the script from your terminal, providing the desired gender using the `--gender` argument.
 
 ```bash
-pip install requests
-⚙️ Usage
-bash
-Copy
-Edit
-python random_user_cli.py --gender male
-Options:
+python random_user.py --gender <gender>
+```
 
---gender: Specify the gender of the user to fetch
-Accepts: male or female
+Replace `<gender>` with either `male` or `female`.
 
-📋 Example Output
-pgsql
-Copy
-Edit
-Name of the user is Mr John Doe
-John lives in Paris, Île-de-France, France
-Email of John is johndoe@example.com
-Contact no. of John is 01-23-45-67-89
-🧠 How It Works
-Takes gender input using argparse
+### Examples
 
-Sends a GET request to the API endpoint:
-https://randomuser.me/api/?gender=male
+**To get information about a random male user:**
 
-Parses the JSON response
+```bash
+python random_user.py --gender male
+```
 
-Prints formatted output to the console
+**To get information about a random female user:**
 
-📁 Project Structure
-objectivec
-Copy
-Edit
-RandomUser-CLI/
-├── random_user_cli.py
-└── README.md
-🙋‍♂️ Author
-Atharva
+```bash
+python random_user.py --gender female
+```
 
-Building tools daily as part of a 30-day transformation challenge before college 🚀
+### Invalid Gender Input
 
-🌐 API Reference
-https://randomuser.me/
+If you enter an invalid gender (anything other than "male" or "female"), the script will inform you and exit.
 
-✅ License
-This project is open-source and free to use.
+```bash
+python random_user.py --gender other
+```
 
-yaml
-Copy
-Edit
-
----
-
-Let me know once it’s pushed — and we’ll jump to **Tool 2: News CLI.**
+-----
